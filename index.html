@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/table.css">
+
+    <script src="./scripts/table.js"></script>
+    <title>DTX Dashboard</title>
+</head>
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <i class="fa-solid fa-gauge-high"></i> DTX Portal
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <!-- Responsive Table Section -->
+        <table class="responsive-table">
+            <!-- Responsive Table Header Section -->
+            <thead class="responsive-table__head">
+                <tr class="responsive-table__row">
+                    <th class="responsive-table__head__title responsive-table__head__title--name">Name
+                    </th>
+                    <th class="responsive-table__head__title responsive-table__head__title--status">Status</th>
+                    <th class="responsive-table__head__title responsive-table__head__title--types">Error</th>
+                    <th class="responsive-table__head__title responsive-table__head__title--update">Last updated at</th>
+                </tr>
+            </thead>
+            <!-- Responsive Table Body Section -->
+            <tbody class="responsive-table__body">
+                <tr class="responsive-table__row">
+                    <td class="responsive-table__body__text responsive-table__body__text--name">
+                        PLM Database
+                    </td>
+                    <td class="responsive-table__body__text responsive-table__body__text--status"><span class="status-indicator status-indicator--failed"></span>Failed</td>
+                    <td class="responsive-table__body__text responsive-table__body__text--types">WP_ALLOW_REPAIR, max_client_conn</td>
+                    <td class="responsive-table__body__text responsive-table__body__text--update">Jul 17, 2021, 01:14 PM</td>
+                </tr>
+                <tr class="responsive-table__row">
+                    <td class="responsive-table__body__text responsive-table__body__text--name">
+                        DTX Server
+                    </td>
+                    <td class="responsive-table__body__text responsive-table__body__text--status"><span class="status-indicator status-indicator--new"></span>Loading</td>
+                    <td class="responsive-table__body__text responsive-table__body__text--types">--</td>
+                    <td class="responsive-table__body__text responsive-table__body__text--update">Apr 24, 2021, 11:36 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
